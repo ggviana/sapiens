@@ -2,7 +2,7 @@
 name: 'fcomponent'
 description: 'Generate a functional component'
 message: 'Please enter the component name'
-root: 'src/components'
+root: 'src'
 output: '**/*'
 ignore: []
 ---
@@ -37,7 +37,7 @@ export default {{ input | pascal }}
 
 ```javascript
 
-describe('{{ output | replace "^.*src/components/(.*?)(.test)?.js" "$1" }}', () => {
+describe('{{ output | replace "^.*src/(.*?)(.test)?.js" "$1" }}', () => {
   it('', () => {
 
   })
