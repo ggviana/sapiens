@@ -40,7 +40,7 @@ const Keypad = ({ children, onKeyPress }) => {
       ))}
 
       <Key
-        label='PROG'
+        label='INPT'
         onPress={onKeyPress} />
 
       {letters.slice(0, 3).map(letter => (
@@ -66,7 +66,7 @@ const Keypad = ({ children, onKeyPress }) => {
       ))}
 
       <Key
-        label='MOD'
+        label='PROG'
         shortcut={'NumpadComma'}
         onPress={onKeyPress} />
 
