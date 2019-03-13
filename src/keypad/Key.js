@@ -17,6 +17,7 @@ const Container = styled.button`
   outline: 0;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
   transform: ${props => props.active ? 'scale(.96)' : 'none'};
   transition: transform ${ANIMATION_TIME}ms ease-in-out;
   width: 100%;
