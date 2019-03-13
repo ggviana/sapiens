@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 `
 
-const Keypad = ({ children, onKeyPress }) => {
+const Keypad = ({ onKeyPress }) => {
 
   const digits = [
     7, 8, 9,
@@ -49,7 +49,7 @@ const Keypad = ({ children, onKeyPress }) => {
 
       <Key
         label='▲'
-        shortcut={'NumpadSubtract'}
+        shortcut={['NumpadSubtract', 'Comma', 'ArrowUp']}
         onPress={onKeyPress} />
 
       {digits.slice(0, 3).map(digit => (
@@ -58,7 +58,7 @@ const Keypad = ({ children, onKeyPress }) => {
 
       <Key
         label='▼'
-        shortcut={'NumpadAdd'}
+        shortcut={['NumpadAdd', 'Period', 'ArrowDown']}
         onPress={onKeyPress} />
 
       {digits.slice(3, 6).map(digit => (
@@ -76,7 +76,7 @@ const Keypad = ({ children, onKeyPress }) => {
 
       <Key
         label='ENTR'
-        shortcut={'NumpadEnter'}
+        shortcut={['NumpadEnter', 'Enter']}
         onPress={onKeyPress}
         data-enter />
 
